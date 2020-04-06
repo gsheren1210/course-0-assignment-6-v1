@@ -1,0 +1,164 @@
+{
+  "version": 1.0,
+  "title": "Assignment 6: Boolean Operators",
+  "quiz": [
+    {
+      "question": "What boolean expression does the following operator express `||`?",
+      "options": [
+        {
+          "value": "and",
+          "answer": false,
+          "explanation": "In C++ the and operator is `&&`."
+        },
+        {
+          "value": "or",
+          "answer": true,
+          "explanation": "Correct! In C++ `||` is the or operator."
+        },
+        {
+          "value": "not",
+          "answer": false,
+          "explanation": "In C++ the not operator is `!`."
+        },
+        {
+          "value": "xor",
+          "answer": false,
+          "explanation": "In C++ the xor operator is `^`."
+        }
+      ]
+    },
+    {
+      "question": "What is the value of this expression `true || false`?",
+      "options": [
+        {
+          "value": "True",
+          "answer": true,
+          "explanation": "Correct! Check out the or truth table in the lesson if you are unsure."
+        },
+        {
+          "value": "False",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "Assuming `variable` if of type bool, what is the simplified form of the expression `variable || !variable`?",
+      "options": [
+        {
+          "value": "`variable`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`!variable`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "True",
+          "answer": true,
+          "explanation": "Correct! Try writing a truth table see why."
+        },
+        {
+          "value": "False",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "What operation is `@` representing in this truth table?\n\nB | A | B @ A\n--|-- | --\nT | T | T\nT | F | F\nF | T | F\nF | F | F",
+      "options": [
+        {
+          "value": "`A && B` and",
+          "answer": true,
+          "explanation": "Correct! This truth table represents the and operator as it is only true when both A and B are true."
+        },
+        {
+          "value": "`A || B` or",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`!(A && B)` nand",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`!(A || B)` nor",
+          "answer": false,
+          "explanation": ""
+        }
+      ]
+    },
+    {
+      "question": "Which of the following produces an identical truth table to `A ^ B`? Try building truth tables to check your guess first.",
+      "options": [
+        {
+          "value": "`(A || B) && A`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`!A || B`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`!(A && !B)`",
+          "answer": false,
+          "explanation": ""
+        },
+        {
+          "value": "`(!A && B) || (A && !B)`",
+          "answer": true,
+          "explanation": ""
+        }
+      ]
+    }
+  ],
+  "fix_code": [
+    {
+      "question": "This code isn't formatted correctly! Can you help fix it?",
+      "hints": [
+        {
+          "line_number": 8,
+          "hint": "Boolean operators should have spaces on either side."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't compiling correctly! Can you help fix it? Be sure to also address any formatting errors.",
+      "hints": [
+        {
+          "line_number": 8,
+          "hint": "Make sure you have the right syntax when writing your operators."
+        }
+      ]
+    },
+    {
+      "question": "This code isn't running correctly! Can you help fix it? Be sure to also address any formatting or syntax errors.",
+      "hints": [
+        {
+          "line_number": 9,
+          "hint": "Be careful to use the right boolean expression to make the code behave how you want."
+        }
+      ]
+    }
+  ],
+  "invent_code": [
+    {
+      "question": "Implement the proper boolean expression in the function evaluate boolean logic such that it obeys the following truth table.\n\n a | b | c | Magic(a, b, c)\n---|---|---|---\n T | T | T  | F\n T | T | F  | F\n T | F | T  | T\n T | F | F  | F\n F | T | T  | F\n F | T | F  | T\n F | F | T  | F\n F | F | F  | T",
+      "hints": []
+    },
+    {
+      "question": "Implement the proper boolean expression in the function evaluate boolean logic such that it obeys the following truth table. You might be inspired by the previous problem.\n\n a | b | c | d | Magic(a, b, c, d)\n---|---|---|---| --\nT  | T | T | T | T\nT  | T | T | F | F\nT  | T | F | T | T\nT  | T | F | F | F\nT  | F | T | T | T\nT  | F | T | F | F\nT  | F | F | T | T\nT  | F | F | F | F\nF  | T | T | T | T\nF  | T | T | F | F\nF  | T | F | T | T\nF  | T | F | F | F\nF  | F | T | T | T\nF  | F | T | F | F\nF  | F | F | T | T\nF  | F | F | F | F",
+      "hints": []
+    },
+    {
+      "question": "We're going to do one of the most famous problems for software interviews.\n* Ask the user for a number.\n* If the number is a multiple of three, print `Fizz`.\n* If the number is a multiple of five, print `Buzz`.\n* If the number is a multiple of both three and five, print `FizzBuzz`.\n* Otherwise print out the number itself.",
+      "hints": []
+    }
+  ]
+}
